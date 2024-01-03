@@ -1,0 +1,24 @@
+[tool.poetry]
+name = "depthestimator"
+version = "0.1.0"
+description = ""
+authors = ["Tunahan Kilic <kilic.tunahan@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+torch = "2.0.1"
+torchvision = "0.15.2"
+torchaudio = "2.0.2"
+pillow = "^10.2.0"
+scipy = "^1.11.4"
+matplotlib = "^3.8.2"
+timm = "0.6.7"
+black = "^23.12.1"
+isort = "^5.13.2"
+
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
