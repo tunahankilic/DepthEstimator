@@ -1,8 +1,7 @@
 
 # Zoe Depth Estimation
 
-A brief description of what this project does and who it's for
-
+ZoeDepth is a deep learning model for metric depth estimation from a single image by [Intelligent Systems Lab Org](https://github.com/isl-org). This project demonstrates the creation of a comprehensive end-to-end pipeline, incorporating FastAPI and Docker by using [ZoeDepth](https://github.com/isl-org/ZoeDepth) model
 
 ## Usage/Examples
 
@@ -30,6 +29,7 @@ http://127.0.0.1:8000/predict
 Install depth estimator with poetry
 
 ```bash
+pip install poetry #If poetry is not installed
 poetry install
 ```
     
@@ -37,9 +37,7 @@ poetry install
 
 To run this project, you will need to add the following environment variables to your .env file
 
-`API_KEY`
-
-`ANOTHER_API_KEY`
+`IMAGE_API_KEY`
 
 
 ## Deployment
@@ -47,7 +45,8 @@ To run this project, you will need to add the following environment variables to
 To deploy this project run
 
 ```bash
-  npm run deploy
+  docker build -t depth_estimation .
+  docker run -d -p 8041:8041 depth_estimation
 ```
 
 
