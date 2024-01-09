@@ -2,7 +2,7 @@
 name = "depthestimator"
 version = "0.1.0"
 description = ""
-authors = ["Tunahan Kilic <kilic.tunahan@gmail.com>"]
+authors = [""]
 readme = "README.md"
 
 [tool.poetry.dependencies]
